@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Burger Shop</title>
+        
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        />
+        
+        <!--Editor Styles-->
+        <link rel="stylesheet" type="text/css" href="https://prelaunch-paraclete.freewebsitesite.com/Templates/css/editor_pro.css">
+        
+        <!--Scripts-->
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+        <!-- JQuery -->
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="https://prelaunch-paraclete.freewebsitesite.com/Templates/css/template.css">
+        <!--<script src="https://prelaunch-paraclete.freewebsitesite.com/Templates/js/wow.min.js"></script>-->
+        
+        <link rel="icon" type="image/x-icon" href="img2.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <script defer async src="https://prelaunch-paraclete.freewebsitesite.com/Templates/js/template.js"></script>
+        
+        <script defer>
+    document.oncontextmenu = function(){
+        // return false;
+    };
+    $(document).ready(function(){
+    });
+  
+    const scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+   
+   <style>
+    body{
+        position: absolute;
+    }
+    .use-btn{
+        box-sizing: border-box;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%);
+        background: #b326b5;
+        z-index: 999;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        transition: all 0.5s;
+    }
+    .use{
+        padding: 10px 20px;
+    }
+    .use a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+    }
+    .use-btn:hover {
+        background: #fb00ff;
+    }
+</style>    
+</head>
+
+<body>
+
+<nav data-nonresizable="" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="" style="font-weight:bold;">
+          <img src="https://www.freewebsitesite.com/image-gallery/img/img1662629591.png">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarSupportedContent-555">
+        <ul class="navbar-nav mr-auto changed" style="font-weight: 600; height: auto; color: rgb(255, 255, 0);">
+            <li class="nav-item">
+                <a class="nav-link changed waves-effect waves-light" href="#home" style="font-weight: 600; height: auto; color: rgb(255, 255, 0);">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+           </li>
+                <li class="nav-item">
+                <a class="nav-link changed waves-effect waves-light" href="About.html" style="font-weight: 600; height: auto; color: rgb(255, 255, 0);">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link changed waves-effect waves-light" href="#service" style="font-weight: 600; height: auto; color: rgb(255, 255, 0);">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link changed waves-effect waves-light" href="#menu" style="font-weight: 600; height: auto; color: rgb(255, 255, 0);">Menu</a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link changed waves-effect waves-light" href="#cart" style="font-weight: 600; height: auto; color: rgb(255, 255, 0);">My Cart</a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link changed waves-effect waves-light" href="#contact" style="font-weight: 600; height: auto; color: rgb(255, 255, 0);">Contact</a>
+            </li>
+        </ul>
+    </div></nav>
+
+<!-- Begining of carousel -->
+
+<div class="container-fluid p-0 my-0" style="margin-top: 6rem;"> 
+<!-- const continerstyle = document.querySelector(".container-fluid")
+ continerstyle.style("border : 5px solid") -->
+
+    <div id="carousel_slideonly" class="section carousel slide pointer-event" data-ride="carousel" style="margin-top: 6rem;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://www.freewebsitesite.com/image-gallery/img/img1662629693.png" alt="First slide">
+            </div>
+            
+        </div>
+    </div>
+</div>    
+
+
+  <!-- End of carousel -->
+
+<section class="home" id="home" tabindex="-1" style="outline: currentcolor none medium;">
+
+   <div class="content">
+      <h3 data-aos="fade-up" data-aos-delay="300" style="color: yellow; margin-bottom: 0;">So meaty you'll go crazy</h3>
+      <p data-aos="fade-up" data-aos-delay="450" style="margin-top: 0; margin-bottom:0;">the best burgers are like life — messy and topped with bacon. <br>Life is too short to miss out on beautiful things like a double cheeseburger.</p>
+      <a data-aos="fade-up" data-aos-delay="600" href="#menu" class="btn waves-effect waves-light" style="background-color: yellow; color: black; font-weight: bold;">our menu</a>
+   </div>
+
+</section>
+
+<section class="service" style="margin-top: 4rem; outline: currentcolor none medium;" id="service" tabindex="-1">
+
+   <div class="box" data-aos="fade-up" data-aos-delay="150">
+    <i class='fas fa-hamburger' style='font-size:48px;color:red'></i>
+
+      <h3>Best quality</h3>
+      <p>It is almost everyone’s favorite fast food – BURGERS!</p>
+   </div>
+
+   <div class="box" data-aos="fade-up" data-aos-delay="300">
+    <i class='fas fa-shipping-fast' style='font-size:48px;color:red'></i>
+      <h3>free delivery</h3>
+      <p>LIMITED TIME: 50% Off + Complimentary Shipping.</p>
+   </div>
+
+   <div class="box" data-aos="fade-up" data-aos-delay="450">
+      <i class="fa fa-clock-o" style="font-size:48px;color:red"></i>
+      <h3>24/7 support</h3>
+      <p>24 hours a day, seven days a week: all the time: We're open for business 24/7.</p>
+   </div>
+
+</section>
+
+<section class="container content-section"  id="menu" style="width: 100%; background-color: black; padding: 0px; margin-top: 2rem;" data-aos="fade-up" data-aos-delay="150">
+            <h2 class="section-header changed" style="color: rgb(255, 255, 0); height: auto;">OUR MENU</h2>
+            <div class="shop-items changed" style="height: auto; outline: currentcolor none medium;" tabindex="-1">
+                <div class="shop-item">
+                    <span class="shop-item-title">Big Crunch</span>
+                    <img class="shop-item-image" src="https://www.freewebsitesite.com/image-gallery/img/img1662630095.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn shop-item-button waves-effect waves-light" type="button" style="background-color: yellow; color: black; font-weight: bold;">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Spicy Mexican</span>
+                    <img class="shop-item-image" src="https://www.freewebsitesite.com/image-gallery/img/img1662630134.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn shop-item-button waves-effect waves-light" type="button" style="background-color: yellow; color: black; font-weight: bold;">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Mc Chicken</span>
+                    <img class="shop-item-image" src="https://www.freewebsitesite.com/image-gallery/img/img1662630185.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn shop-item-button waves-effect waves-light" type="button" style="background-color: yellow; color: black; font-weight: bold;">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Maharaja Mac</span>
+                    <img class="shop-item-image" src="https://www.freewebsitesite.com/image-gallery/img/img1662630209.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn shop-item-button waves-effect waves-light" type="button" style="background-color: yellow; color: black; font-weight: bold;">ADD TO CART</button>
+                    </div>
+                </div>
+              <div class="shop-item">
+                    <span class="shop-item-title">Big Crunch</span>
+                    <img class="shop-item-image" src="https://www.freewebsitesite.com/image-gallery/img/img1662630095.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn shop-item-button waves-effect waves-light" type="button" style="background-color: yellow; color: black; font-weight: bold;">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Spicy Mexican</span>
+                    <img class="shop-item-image" src="https://www.freewebsitesite.com/image-gallery/img/img1662630134.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn shop-item-button waves-effect waves-light" type="button" style="background-color: yellow; color: black; font-weight: bold;">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Mc Chicken</span>
+                    <img class="shop-item-image" src="https://www.freewebsitesite.com/image-gallery/img/img1662630185.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn shop-item-button waves-effect waves-light" type="button" style="background-color: yellow; color: black; font-weight: bold;">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Maharaja Mac</span>
+                    <img class="shop-item-image" src="https://www.freewebsitesite.com/image-gallery/img/img1662630209.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn shop-item-button waves-effect waves-light" type="button" style="background-color: yellow; color: black; font-weight: bold;">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="about" id="about" tabindex="-1" style="outline: currentcolor none medium;">
+
+   <div class="image" data-aos="fade-right" data-aos-delay="150" style="min-height: fit-content;">
+      <img src="https://www.freewebsitesite.com/image-gallery/img/img1662632059.png" alt="">
+   </div>
+
+   <div class="content" data-aos="fade-left" data-aos-delay="300" style="margin-left: 1rem;">
+      <h3 class="title">Step into Burger Heaven</h3>
+      <p></p>
+      <div class="icons">
+         <h3> <i class="fas fa-check"></i> Best price </h3>
+         <h3> <i class="fas fa-check"></i> Best Service </h3>
+         <h3> <i class="fas fa-check"></i> Fresh Ingredient </h3>
+         <h3> <i class="fas fa-check"></i> Backed buns </h3>
+         <h3> <i class="fas fa-check"></i> Natural cheese </h3>
+         <h3> <i class="fas fa-check"></i> Veg &amp; Non-veg </h3>
+      </div>
+   </div>
+
+</section>
+        
+        <section class="container content-section changed" style="border-color: rgb(0, 0, 0); border-width: 2px; height: auto; outline: currentcolor none medium;" id="cart" tabindex="-1">
+            <h2 class="section-header changed" style="color: rgb(255, 255, 0); height: auto;">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+          <form action="https://prelaunch-paraclete.freewebsitesite.com/Templates/phpAction/send_mail.php" method="post">
+            <div class="cart-items"></div>
+            <div style="display: flex; flex-direction:column; align-items:center; justify-content:center;">
+            <input type="text" placeholder="Enter your name" style="border: 2px solid yellow; padding: 1rem; margin-top: 1rem;" required="">
+            <input type="number" placeholder="Enter your phone number" style="border: 2px solid yellow; padding: 1rem; margin-top: 1rem;" required="">
+            <input type="text" placeholder="Enter your address" style="border: 2px solid yellow; padding: 1rem; margin-top: 1rem;" required="">
+            <button type="submit" class="btn btn-lg btn-login mb-2 waves-effect waves-light" style="background-color: yellow; color: black; font-weight: bold;">PLACE ORDER</button>
+            </div>
+          </form>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" data-component-paypal="" style="padding: 0px; min-height: fit-content; height: auto;" class="changed">
+            <!-- Identify your business so that you can collect the payments. -->
+				<input type="hidden" name="business" value="i@fws.com">
+
+				<!-- Specify a Donate button. -->
+				<input type="hidden" name="cmd" value="_donations">
+
+				<!-- Specify details about the contribution -->
+				<input type="hidden" name="item_name" value="ParacleteJs">
+				<input type="hidden" name="item_number" value="Support">
+				<input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="amount" value="0" id="price">
+            <button class="btn waves-effect waves-light" type="submit" style="background-color: yellow; color: black; font-weight: bold; font-size: 1rem; text-align: center;" onclick="purchaseClicked()">MAKE PAYMENT</button>
+          <input type="hidden" name="user_email"><input type="hidden" name="user_email"></form>
+        </section>
+        
+
+<script>
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
+}
+
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
+
+    var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
+    }
+
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+}
+
+function purchaseClicked() {
+    alert('Thank You For Your Purchase')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
+}
+
+function removeCartItem(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+}
+
+function quantityChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+}śśś
+function addToCartClicked(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    addItemToCart(title, price, imageSrc)
+    updateCartTotal()
+}
+
+function addItemToCart(title, price, imageSrc) {
+    var cartRow = document.createElement('div')
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == title) {
+            alert('This item is already added to the cart')
+            return
+        }
+    }
+    var cartRowContents = `
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+            <span class="cart-item-title">${title}</span>
+        </div>
+        <span class="cart-price cart-column">${price}</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <button class="btn btn-danger" type="button">REMOVE</button>
+        </div>`
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+
+function updateCartTotal() {
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+    document.getElementById("price").value=total;                                   
+}
+</script>
+
+<h2 class="section-header changed" style="color: rgb(255, 255, 0); height: auto;">CONTACT US</h2>
+<div class="" id="contact" tabindex="-1" style="outline: currentcolor none medium;"><div data-component-maps="" style="min-height: 240px; min-width: 240px; height: 50vh; position: relative;" class="">
+    <iframe src="https://maps.google.com/maps?q=New York&amp;z=10&amp;t=q&amp;output=embed" style="width:100%;height:100%; pointer-events:none" frameborder="0"></iframe>
+    </div></div>
+
+<div class=""><div class="card" style="min-height: 550px; background-color: rgb(0, 0, 0);">
+  <div class="card-body changed" style="background-color: black; height: auto;">
+        <form action="https://prelaunch-paraclete.freewebsitesite.com/Templates/phpAction/send_mail.php" method="post" class="">
+            <div class="form-group"><label class="active changed" style="font-size: 20px; font-weight: 700; background-color: rgba(6, 247, 255, 0.03); color: rgb(255, 255, 0); height: auto;" for="name">Name</label><input type="text" class="form-control" name="name" placeholder="Enter your name" required=""></div>
+            <div class="form-group"><label class="active changed" style="font-size: 20px; font-weight: 700; color: rgb(255, 255, 0); height: auto;" for="email">Email</label><input type="email" class="form-control" name="email" placeholder="Enter your email" required=""></div>
+            <div class="form-group"><label class="changed active" for="mobno" style="font-weight: 700; font-size: 20px; color: rgb(255, 255, 0); height: auto;">Mobile No</label><input type="text" class="form-control" name="mobno" value="" placeholder="Enter your mobile no."></div>
+            <div class="form-group"><label class="active changed" style="font-size: 20px; font-weight: 700; color: rgb(255, 255, 0); height: auto;" for="msg">Message</label><textarea class="form-control" name="msg" placeholder="Enter your message" required=""></textarea></div>
+            <div class="form-group"><button type="submit" class="btn btn-lg btn-login mb-2 waves-effect waves-light" style="background-color: yellow; color: black; font-weight: bold; " name="contact" id="centrbtn">
+            Send Message</button></div>
+        </form>
+  </div>
+</div></div><div class=""><footer class="section py-3 changed" style="background-color: rgb(255, 255, 0); height: auto;">
+        <div class="container text-center changed" style="background-color: rgb(255, 255, 0); height: auto;">
+            <span class="changed" style="background-color: rgb(255, 255, 0); color: rgb(244, 236, 15); font-size: 19.5px; height: auto;">
+            Designed with |
+            <span style="color: rgb(32, 156, 238); background-color: rgb(255, 255, 0); height: auto;" class="changed"> Paraclete Themes</span> | Copyright
+            <i class="fa fa-copyright changed" aria-hidden="true" style="background-color: rgb(255, 255, 0); color: rgb(92, 76, 76); height: auto;"></i>
+            <span class="full-year changed" style="background-color: rgb(255, 255, 0); color: rgb(99, 90, 90); height: auto;">2022</span>
+          </span>
+        </div>
+    </footer></div>    
+    </body>
+</html>
